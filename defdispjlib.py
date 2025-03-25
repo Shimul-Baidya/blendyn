@@ -218,7 +218,7 @@ class BLENDYN_OT_import_deformable_displacement(bpy.types.Operator):
                 eldbmsg(retval, type(self).__name__ + '::execute()', elem)
                 return {'CANCELLED'}
             elif retval == {'COLLECTION_ERROR'}:
-                eldbmsf(retval, type(self).__name__ + '::execute()', elem)
+                eldbmsg(retval, type(self).__name__ + '::execute()', elem)
                 return {'CANCELLED'}
             elif retval == {'LIBRARY_ERROR'}:
                 eldbmsg(retval, type(self).__name__ + '::execute()', elem)
